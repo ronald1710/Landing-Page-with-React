@@ -41,7 +41,7 @@ function App() {
       <Jumbotron />,
       <div className="container d-flex">   
       {img.map((singleimg, i) => {
-        return <Cards img={singleimg} alt={alt[i]} tittle={tittle[i]} description={description[i]} link={link[i]} desLink={desLink[i]} />;
+        return <Cards key={i}  img={singleimg} alt={alt[i]} tittle={tittle[i]} description={description[i]} link={link[i]} desLink={desLink[i]} />;
       })}
       </div>
       </div>

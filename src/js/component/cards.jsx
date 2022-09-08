@@ -10,9 +10,11 @@ const Cards = (props) => {
     <p className="card-text text-center">
       {props.description}
     </p>
-    <a href={props.link} className="btn btn-primary  gap-2 col-3 mx-auto text-center">
+    <div className="d-flex justify-content-center">
+    <a href={props.link} className="btn btn-primary   ">
       {props.desLink}
     </a>
+    </div>
   </div>
 </div>
 
